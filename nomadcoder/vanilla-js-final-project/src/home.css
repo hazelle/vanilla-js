@@ -194,6 +194,7 @@ ul > li > button {
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    outline: none;
 }
 
 ul > li > button:hover {
