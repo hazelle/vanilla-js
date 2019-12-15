@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon.png"
+    />
+  </head>
+  <body>
+    <div class="content-body">
+      <div class="greeting-div">
+        <form class="name-form">
+          <label>Hello, </label
+          ><input
+            class="name-input"
+            type="text"
+            placeholder="What is your name?"
+          /><span class="name-span"></span>
+        </form>
+      </div>
+      <div class="clock-div">
+        <div class="clock1">
+          <label class="clock">00:00</label>
+        </div>
+        <div class="clock2">
+          <div class="meridiem">AM</div>
+          <div class="second"></div>
+        </div>
+        <div class="weather-div">
+          <p class="weather">
+            <span class="temperature">0.0</span> °C, <span class="country">KR</span>
+          </p>
+        </div>
+      </div>
+      <div class="todo-div">
+        <div class="form-div">
+          <form class="taskForm">
+            <input class="addTask" type="text" placeholder="Add task!" />
+          </form>
+        </div>
+        <div>
+          <div class="list-div pending-div">
+            <h2 id="h2-pending">
+              Pending List <span class="pending-count">(0 tasks)</span>
+            </h2>
+            <ul id="ul-pending"></ul>
+          </div>
+          <div class="list-div finished-div">
+            <h2 id="h2-finished">
+              Finished List <span class="finished-count">(0 tasks)</span>
+            </h2>
+            <ul id="ul-finished"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="home.js"></script>
+    <script src="todo-list.js"></script>
+    <script src="clock.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>

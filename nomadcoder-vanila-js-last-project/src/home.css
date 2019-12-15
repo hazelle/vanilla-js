@@ -1,0 +1,189 @@
+body {
+    background-color: #2C3E50;
+    overflow-y: scroll;
+    color: white;
+}
+
+.content-body {
+    width: 1000px;
+    margin: 100px auto;
+    border-radius: 20px;    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } tp {
+        opacity: 1;;
+    }
+}
+
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.greeting-div {
+    width: 500px;
+    margin: 0 auto -60px;
+    font-size: 40px;
+}
+
+.name-form {
+    display: inline-block;
+}
+
+.name-form > label {
+    vertical-align: top;
+}
+
+.name-input {
+    width: 300px;
+    height: 60px;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 30px;
+    outline: none;
+    color: white;
+}
+
+.clock-div {
+    width: 500px;
+    height: 200px;
+    margin: 0 auto 50px;
+    padding-left: 5px;
+    animation: fadeIn .5s linear;
+}
+
+.clock-div > div {
+    display: inline-block;
+}
+
+.clock1 {
+    font-size: 170px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.clock2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.clock2 > div {
+    height: 80px;
+}
+
+.clock2 > div:nth-child(2) {
+    text-align: center;
+    font-size: 40px;
+}
+
+.weather-div {
+    width: 100%;
+    margin: auto;
+}
+
+.weather {
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.todo-div {
+    width: 100%;
+}
+
+.list-div {
+    width: 35%;
+    height: inherit;
+    min-height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+.pending-div {
+    margin-left: 10%;
+    float: left;
+}
+
+.finished-div {
+    margin-right: 10%;
+    float: right;
+}
+
+.form-div {
+    width: 100%;
+}
+
+.taskForm {
+    width: 400px;
+    margin: 10px auto;
+}
+
+.addTask {
+    width: 100%;
+    height: 60px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 30px;
+    outline: none;
+    color: white;
+}
+
+.addTask::placeholder, .name-input::placeholder {
+    color: white;
+    font-size: 25px;
+}
+
+h2 {
+    margin: 10px 15px;
+    font-weight: 600;
+}
+
+h2 > span {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+ul {
+    padding-inline-start: unset;
+}
+
+ul > li {
+    list-style-position: inside;
+    margin: 5px 10px;
+    padding: 5px 5px 5px 15px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 20px;
+    line-height: 27px;
+    color: #4d4d4d;
+    font-weight: bold;
+}
+
+ul > li > button {
+    float: right;
+    vertical-align: middle;
+    
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+ul > li > button:hover {
+    background-color: rgba(0, 200, 255, 0.5);
+}
